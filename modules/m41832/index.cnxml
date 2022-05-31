@@ -1,0 +1,26 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>CDMA Background </title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41832</md:content-id>
+  <md:title>CDMA Background </md:title>
+  <md:abstract>Background of CDMA</md:abstract>
+  <md:uuid>9f65bcb0-dd2b-47c3-aa83-bc63403f8303</md:uuid>
+</metadata>
+
+<content>
+    
+    <para id="id1164564546485">Code division multiple access, or CDMA, is a channel access method often used in radio/cell phone communication. CDMA employs the spread-spectrum modulation format, which has the advantage of making the signals resistant to narrowband interference, since it would only affect a small portion of the spread spectrum signal it is easy to filter out without a significant loss of data, difficult to intercept and resistant to jamming. </para>
+    <para id="id1164596040196"><figure id="cute-dog"><media id="dogpic" alt="A dog sitting on a bed">
+    <image mime-type="image/gif" src="../../media/cdmaimag.gif"/>
+  </media>
+ 
+    
+</figure></para>
+    <para id="id4339850">Direct-sequence spread spectrum for CDMA involves multiplying the data to be transmitted by a pseudo-random sequence of -1’s and 1’s. This spreads the original signal into a much wider band, hence the term “spread-spectrum.” The original data can be restored by the receiver using a de-spreading technique. This involves de-spreading the received signal with the pseudo-random sequence respective to the original signal. To do this, the transmitted and received sequences must be synchronized. </para>
+    <para id="id1164576079184">CDMA uses orthogonal coding to allow multiple users to access a channel simultaneously. An advantage of CDMA is that it is possible to keep increasing the number of users for a system.  In comparison, other techniques for multiple access, such as frequency and time division, rely on assigning a specific frequency or time slot to each user. This greatly limits the efficiency of a system, since the number of frequencies available for wireless communication is limited, and the use of time division only allows for one user to access the channel at a time. Essentially FDMA and TDMA set hard limits on the number of users a system can have because there is no way to continue making divisions past a certain point. On the other hand, with CDMA it is possible to keep adding users. The limiting factor of CDMA is the error rate, which increases with each added user. </para>
+    <para id="id1164596207182">For our model we assume that we know when the signal arrives at the transmitter, so we can assume that the modulation and de-modulation codes are synchronized.  Each user has a pseudo-random noise (PN) sequence that is orthogonal to other users’ PN sequences. Their cross-correlation is close to 0. The orthogonality of the codes ensures that each signal’s transmitter-receiver pair will only deal with its corresponding signal; in other words, the receiver for a particular signal will see any other signal going through the channel as simply noise, and this will eliminate multiple-access interference. </para>
+    <para id="id5271013">In direct sequence spread spectrum, there are two types of spreading sequences: short and long. In short spreading sequences, the spreading sequence is periodic with a period equal to the processing gain.  As a result, the same short sequence is used to modulate each symbol which is transmitted.  Examples of short spreading sequences are Walsh Codes and Gold Codes.
+
+In long spreading sequences, the spreading sequence is either aperiodic or has a period which is much longer than the processing gain.  We chose to use long spreading sequences in our model because long spreading sequences are used in the IS-95 standard.  Long spreading PN sequences can be generated using maximum length shift registers.  To acquire sequences for each user which are close to mutually orthogonal, each user is assigned a shifted version of the PN sequence.</para>
+  </content>
+</document>

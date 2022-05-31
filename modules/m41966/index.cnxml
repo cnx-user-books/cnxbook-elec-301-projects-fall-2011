@@ -1,0 +1,30 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Methods of Analysis</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41966</md:content-id>
+  <md:title>Methods of Analysis</md:title>
+  <md:abstract/>
+  <md:uuid>a4577636-f956-438f-bf70-8143e3cb4745</md:uuid>
+</metadata>
+
+<content>
+    <para id="id1164986004923">Spectrogram and PSD</para>
+    <para id="id1164979445081">From the Neurosky Mindset we could gather data points in the time domain. Given this information though, we could not discern any differences between our experiments. Thus, we decided to analyze our data in the frequency domain using Matlab.</para>
+    <para id="id1164970079208">The Matlab function Spectrogram segments a time domain signal and for each segment calculates the fourier transform of each segment. The function produces a graphic much like the following:</para>
+    <figure id="id1164967492964">
+      <media id="id1164967492964_media" alt="">
+        <image mime-type="image/png" src="../../media/graphics1-ed23.png" id="id1164967492964__onlineimage" height="437" width="583"/>
+      </media>
+    </figure>
+    <para id="id1164985205750">As one can see, at each time there is some frequency distribution, where red corresponds to a relatively large value and blue corresponds to a relatively small value.</para>
+    <para id="id1164966268388">The inputs to the function are the sampling frequency and the specific window. We set the sampling frequency to 512 since Neurosky samples at 512 HZ. We let the window be a hamming window because it seems to be the most widely used window for basic fourier analysis. We chose window size to be .4 seconds (200 samples) empirically based on how nice our figures looked.</para>
+    <para id="id1164974476764"/>
+    <para id="id1164981600874">The second function we used in Matlab was the Power spectral density (PSD) function. This function finds the average power at each frequency. </para>
+    <figure id="id1164967865787">
+      <media id="id1164967865787_media" alt="">
+        <image mime-type="image/png" src="../../media/graphics2-4ab0.png" id="id1164967865787__onlineimage" height="438" width="583"/>
+      </media>
+    </figure>
+    <para id="id1164969228342">Both these methods gave us effective ways to find differences in our experimental data.</para>
+  </content>
+</document>

@@ -1,0 +1,160 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Results and Applications</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41980</md:content-id>
+  <md:title>Results and Applications</md:title>
+  <md:abstract>This modules provides the results and measurements of our study.</md:abstract>
+  <md:uuid>48917898-65c0-4198-b7e5-9be5027ea60c</md:uuid>
+</metadata>
+
+<content>
+    <para id="id1171934866682">Results and Conclusions</para>
+    <para id="id1171920425584">We find that given several different real world situations, we can effectively represent their blurring effects with a point spread function. This point spread function is critical in our ability to recover our original image. In our case, we have chosen several different situations with known blurring kernels to test the ability of the FTVd algorithm. </para>
+    <para id="id1171923173589">The FTVd algorithm is effective at recovering our original image, but this is highly dependent on the amount of blur and noise present in the image. With exceeding large amount of noise corruption, we will not be able to recover our signal. However, even with large amounts of blur, we still retrieve the image as long as we can effectively create a kernel to represent the functions that have acted on our signal. </para>
+    <para id="id1171925966436">For each of our images, we measured the peak signal-to-noise ratio (PSNR), which compares the similarity of two images pixel-by-pixel. The value of one pixel in image A is subtracted from its value in image B. This difference is squared, which gives us a positive number called the squared error for the pixel. We repeat this process across all pixels in both images to find the sum of these squared errors, and divide by the number of pixels. This gives the mean squared error (MSE). If the two images are identical, the difference between each pixel will be zero for all the pixels. Dividing by the number of pixels, will give a MSE of zero. </para>
+    <para id="id1171922064512">PSNR is calculated using the following equation:</para>
+    <equation id="id1171921105528">
+      <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mstyle fontstyle="italic">
+                      <m:mrow>
+                        <m:mtext>PSNR</m:mtext>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mtext>10</m:mtext>
+                  </m:mrow>
+                  <m:msub>
+                    <m:mtext>log</m:mtext>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mtext>10</m:mtext>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:mfenced open="(" close=")">
+                    <m:mfrac>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:msup>
+                            <m:mtext>MAX</m:mtext>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>MSE</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mfrac>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{ ital "PSNR"="10""log" rSub { size 8{"10"} }  left ( {  { ital "MAX" rSup { size 8{2} } }  over  { ital "MSE"} }  right )} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </equation>
+    <para id="id1171926266312">In our case, MAX<sub/>= 1. </para>
+    <para id="id1171923280096">The following image shows the recovered image of handshake with L2 noise PSNR=41.97 dB:</para>
+    <para id="id1171928312333">
+      <figure id="id1171926390156">
+        <media id="id1171926390156_media" alt="">
+          <image mime-type="image/jpg" src="../../media/Picture 0-6e54.jpg" id="id1171926390156__onlineimage" height="600" width="600"/>
+        </media>
+      </figure>
+    </para>
+    <para id="id1171947054197">The next image shows the recovered version of our foreground/background blur with L1 noise PSNR=34.50 dB:</para>
+    <para id="id1171926359907">
+      <figure id="id1171920593469">
+        <media id="id1171920593469_media" alt="">
+          <image mime-type="image/jpg" src="../../media/Picture 1-27cb.jpg" id="id1171920593469__onlineimage" height="557" width="557"/>
+        </media>
+      </figure>
+    </para>
+    <para id="id1171921081558">The following graph shows the PSNR calculated for varying amounts of linear motion blur. It demonstrates the ability for an effective recovery every time. We can see that the PSNR of the recovered images was always with the range of about 30-50 dB, which compares favorably to the PSNR of common lossy compression ratios. </para>
+    <para id="id1171920450129">
+      <figure id="id1171920302965">
+        <media id="id1171920302965_media" alt="">
+          <image mime-type="image/png" src="../../media/Picture 3-b921.png" id="id1171920302965__onlineimage" height="456" width="600"/>
+        </media>
+      </figure>
+    </para>
+    <para id="id1171920590396">The next graph shows similar results for varied radii of our 2D disc. The graph shows resulting PSNR well within the range of 30-50dB. </para>
+    <para id="id1171931141607">
+      <figure id="id1171926258795">
+        <media id="id1171926258795_media" alt="">
+          <image mime-type="image/png" src="../../media/Picture 2.png" id="id1171926258795__onlineimage" height="420" width="600"/>
+        </media>
+      </figure>
+    </para>
+    <para id="id1171928273486">The following table shows the PSNR for each all of our recovered images from their corresponding blurry and noisy observations. </para>
+    <table id="id1171920276237" summary="">
+      <tgroup cols="5">
+        <colspec colnum="1" colname="c1"/>
+        <colspec colnum="2" colname="c2"/>
+        <colspec colnum="3" colname="c3"/>
+        <colspec colnum="4" colname="c4"/>
+        <colspec colnum="5" colname="c5"/>
+        <tbody>
+          <row>
+            <entry/>
+            <entry namest="c2" nameend="c3">PSNR of Blurry and Noisy Observation (dB)</entry>
+            <entry namest="c4" nameend="c5">PSNR of Recovered Images (dB)</entry>
+          </row>
+          <row>
+            <entry>Blur Kernel</entry>
+            <entry>L1 Salt and Pepper</entry>
+            <entry>L2 Gaussian Noise</entry>
+            <entry>L1 Salt and Pepper</entry>
+            <entry>L2 Gaussian Noise</entry>
+          </row>
+          <row>
+            <entry>Linear Motion</entry>
+            <entry>14.9163</entry>
+            <entry>23.6375</entry>
+            <entry>30.4995</entry>
+            <entry>36.5378</entry>
+          </row>
+          <row>
+            <entry>Handshake</entry>
+            <entry>14.9375</entry>
+            <entry>24.2680</entry>
+            <entry>32.1562</entry>
+            <entry>41.9656</entry>
+          </row>
+          <row>
+            <entry>Out of Focus</entry>
+            <entry>14.9695</entry>
+            <entry>28.8440</entry>
+            <entry>33.1344</entry>
+            <entry>38.0992</entry>
+          </row>
+          <row>
+            <entry>Foreground/ Background</entry>
+            <entry>15.0063</entry>
+            <entry>30.5060</entry>
+            <entry>34.5034</entry>
+            <entry>32.3670</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <para id="id1171918434853">Areas for Future Study</para>
+    <para id="id1171928216134">As the results show, the FTVd algorithm can be used to quickly deblur noisy images and is robust enough to handle moderate to severe amounts of blur while achieving an acceptable PSNR. Underlying these results, however, is the fundamental assumption that we have an accurate representation of the blur kernel. This is to say, the algorithm can reconstruct the clean image with some fidelity <emphasis effect="italics">if</emphasis> we actually know or can determine the blur kernel. However, we still sacrifice some of the fine detail or sharp edges in our recovered image. </para>
+    <para id="id1171920595613">One of the methods to treat focus blur is to implement a coded aperture into the hardware of the camera lens. In this approach, a patterned mask is placed inside of the lens at the plane of the aperture. Out-of-focus photos taken with this setup will generate a specific pattern on the camera sensor, which can be used to produce a kernel.</para>
+    <para id="id1171920489972">To treat handshake blur, direct measurement of the blur kernel is possible using a high-speed camera and sensors. The problem of handshake blur was simplified in our study, as there are multiple factors that account for blur in an image. A more realistic handshake blur kernel would involve different kernels for different parts of the image. Image deblurring using these so-called “spatially-varying point spread functions” would operate much the same as in our study but would run on sections of the photo sequentially, inputting the kernel associated with the section of the photo examined at the time [3]. </para>
+  </content>
+</document>

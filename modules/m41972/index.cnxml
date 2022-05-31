@@ -1,0 +1,19 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>Algorithm for Differentiating Between Mental Activities</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41972</md:content-id>
+  <md:title>Algorithm for Differentiating Between Mental Activities</md:title>
+  <md:abstract>In this section are a description of how we processed raw EEG data, as well as an overview of how we algorithmically distinguished between the data associated with resting and reading.</md:abstract>
+  <md:uuid>3d68647e-2d14-459c-859a-20b16d9863e4</md:uuid>
+</metadata>
+
+<content>
+  <para id="delete_me"><title>The Algorithm</title>After collecting a large amount of data related to different activities and, in theory, different levels of brain activity, we attempted to make general statements about the differences between them. Nearly all of the data we collected revealed that distinct activities resulted in distinct brain signals; however, some of these differences appeared more reliably and more markedly than others. By examining the spectrograms we created for each scenario, we determined that relaxing and reading were two of the most distinct activities with respect to measured brain activity. With this in mind, we decided to design and implement an algorithm capable of distinguishing between spectrograms associated with relaxing or reading.</para><para id="eip-76">The initial step in this process was an analysis of the spectrograms and power spectral density plots collected for different trials of reading and resting. Several features seemed potential candidates to be leveraged in the algorithm. One striking difference is the presence of an intense band of activity at 120 Hz, which appears in the reading spectrogram but is absent in the resting spectrogram. Despite its stark differences, we chose not to incorporate this feature into the algorithm because we felt that it does not likely indicate a true effect occurring in the brain. Rather, its ubiquity across many of our measurements (and the fact that its frequency never wavers) led us to believe that it might be an artifact of the headset. Instead, we were more interested in the fact that the resting state appears to have more energy just above baseband, in the 10-50 Hz range. Ultimately, this was the feature we selected for in the algorithm. Because this is an effect that accumulates over the entire period of the experiment, the Power Spectral Density plot provides an excellent way to quantify these differences. As is evident in the PSD plot below, the intuitions we developed from the spectrograms are clearly confirmed to hold true for the example below. After inspecting several other trials, we decided that the 10-50 Hz frequency range selected the phenomenon we observed while excluding potential sources of noise like 60 Hz noise. Thus, we wrote a script to integrate the power in this range for the two sets of data. It then attributes the higher value to the resting state and the lower to a reading state. With the appropriately set integration limits. the algorithm correctly determined the source of the data for all of the trials we performed.</para><section id="eip-902"><title>A PSD Comparison of Reading and Resting</title><para id="eip-804"><media id="dog_on_couch" alt="example psd plot">
+	   
+  <image mime-type="image/png" src="../../media/untitled.png"/>
+		 
+</media></para></section>
+</content>
+
+</document>

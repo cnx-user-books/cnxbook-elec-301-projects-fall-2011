@@ -1,0 +1,43 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Experimental Methods</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41954</md:content-id>
+  <md:title>Experimental Methods</md:title>
+  <md:abstract>A description of the experiments and methods used in the project.</md:abstract>
+  <md:uuid>14514099-6551-40bd-82ff-9165402f719f</md:uuid>
+</metadata>
+
+<content>
+    
+    <para id="id1172526256455"><title>Experimental Methods</title>The overall goal of the experiment was to develop an algorithmic way to differentiate between the spectrograms of various mental activities. The following section details the approach to achieving this goal:</para>
+    <para id="id1172526559865">Data was collected using the Neurosky Mindset. The Mindset is a commercial-grade EEG used widely in education and academic research. It measures 'brainwaves', the aggregate charge of hundreds of thousands neural discharges, through use of a dry-electrode that can sense electrical activity. The electrode is placed on the forehead and the device is connected to a computer via Bluetooth for data collection. The electrode returns the voltage and an associated time stamp so that a time versus voltage plot can be generated over the sample period. From these data, a Fourier transform is taken, enabling analysis in the frequency domain. In addition, the power spectral density of the data was taken to determine at which frequencies the most activity was occurring.</para>
+    <para id="id1172526674788">To find out whether or not changes in mental state could be resolved using the data collected from the Mindset, multiple experiments were designed. Different activities that required 'concentration' were selected to see if they could be differentiated from their respective spectrograms, as well as a couple of 'relaxation' activities. </para>
+    <para id="id1172520659477">The activities that required concentration were chosen to be disparate so that their spectrograms would hopefully reveal common traits across all people when doing the same activity but have noticeable differences across different activities. Mental arithmetic, reading, and listening to music were the chosen activities in this regard. For all of the tests, the Mindset was placed on the subject's head and data collection was started as soon as the activity was commenced. The mental arithmetic test involved a taking a quiz of simple math problems. The quiz consisted of basic arithmetic operations (addition, subtraction, division, and multiplication) as well as some simple word and figure problems (for example, if you see a car moving from left to right in your rearview mirror, in which direction will it be moving to someone who is facing your car?). The reading experiment simply had the test subjects read an interesting article from beginning to end. For the music test, the subject listened to two very different pieces of music, a Beethoven composition and a heavy metal song. Not only was the goal to differentiate between separate activities in this case, but also to see if a distinction could be made within the same activity between two pieces from the spectrogram.</para>
+    <section id="eip-303"><title>Example: Resting and Reading Spectrograms</title><table id="eip-111" summary="A comparison of the spectrograms for resting and reading.">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>
+<media id="resting" alt="An example of a resting spectrogram">   
+  <image mime-type="image/png" src="../../media/resting_transposed.png" width="400px"/>		 
+</media>
+    </entry>
+    <entry>
+<media id="reading" alt="An example of a reading spectrogram">
+  <image mime-type="image/png" src="../../media/reading_transposed.png" width="400px"/>		 
+</media>
+    </entry>
+  </row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table></section><para id="id1172526564947">There were two forms of relaxation activities. The first simply was a period of data collection while the subject sat at rest. In the second activity, the subject first listened to 'Binaural Beats'. This piece of music was designed to induce a sense of deep relaxation in the user through use of extremely low frequency sounds. After listening to the beats, the user then relaxed while data was collected through the Mindset. The purpose of running these tests was to not only see if a base pattern characterizing relaxation could be established in the spectrograms, but also to see if there was any significance in the spectrograms when the subject was in a 'deep' meditation.</para>
+    <para id="id1172520565406">Later tests combined both the relaxation and mental activities into one session in order to eliminate experimental error from non-constant electrode positioning and factors affecting mental state at different times. It also makes heuristically differentiating between 'relaxing' and 'concentrating' much easier when both activities are represented on a single spectrogram. The subject would first relax for a period of one minute and then start the 'concentration' activity.</para>
+    <para id="id1172520659647">All of the experiments were conducted on the four members of the group, with multiple trials ran for each individual.</para>
+    <para id="id1172520569560">From the results of the experiment, it was apparent that the reading and simple relaxation activities returned the most consistent and useful data. Due to this fact, the algorithm to differentiate between different mental activities was designed around these experiments.</para>
+    <para id="id1172526489683"/>
+  </content>
+</document>

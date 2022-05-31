@@ -1,0 +1,37 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>2 - Voice Recognition: Overview of the Modern Algorithms</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41984</md:content-id>
+  <md:title>2 - Voice Recognition: Overview of the Modern Algorithms</md:title>
+  <md:abstract/>
+  <md:uuid>6a05158e-4cd4-4366-9a12-940fd6c32a89</md:uuid>
+</metadata>
+
+<content>
+    <para id="id1167888775269">Overview of the Modern Algorithm:</para>
+    <para id="id1167889585651">The speech recognition system consists of speech segmentation, feature extraction, and optimal feature-matching with a trained library of stored features.</para>
+    <para id="id1167898867496">Speech Segmentation:</para>
+    <para id="id1167897014847">Speech segmentation is fairly uniform across systems, segmenting a string of spoken words into individual components. This can be easily accomplished by segmenting at points where power of the sampled signal goes to zero.</para>
+    <para id="id1167897506636">Feature Extraction:</para>
+    <para id="id1167906094786">Feature extraction may be done in a variety of ways, depending on the features one chooses to extract. Industry standard is extraction of the coefficients that collectively represent the short-term power spectrum of the recorded sound, known as mel-frequency cepstrum coefficients (MFCCs). MFCCs are derived by:</para>
+    <list id="id1167899051981" list-type="enumerated" number-style="arabic">
+      <item>Fourier transforming the windowed (usually Hamming) excerpt of the signal</item>
+      <item>Using triangular overlapping windows, map the powers of the obtained spectrum onto the mel scale, a logarithmic scale of pitches that more accurately models human hearing</item>
+      <item>Taking the log of the powers at each mel-frequency</item>
+      <item>De-correlate the resulting spectrum with a cosine transform</item>
+      <item>Extract the MFCCs as the amplitudes of the resulting spectrum</item>
+    </list>
+    <para id="id1167899197986">MFCC feature-extraction is typically used in conjunction with Hidden Markov Model feature-matching.</para>
+    <para id="id1167901371563">Prior to MFCCs, speech recognition systems used linear predictive coding (LPC). By assuming sibilants and plosive sounds to be occasional anomalies and therefore inverse-filtering out the formants, the values of the signal could be predicted on a local timescale by a series of linear representations after having extracted the coefficients.</para>
+    <para id="id1167898868790">Feature-matching:</para>
+    <para id="id1167893173528">Feature-matching is traditionally implemented via dynamic time warping (DTW), which allowing for the matching of sampled words with stored templates despite stretched and compressed differences in speed and timing. This technique has fallen out of favor thanks to the current industry gold standard of speech recognition: the Hidden Markov Model (HMM).</para>
+    <para id="id1167899935695">As speech signals are short-time stationary processes, modeling speech signals as HMMs is feasible - and offers great advantages over DTW due to extensive training features and implications towards a tremendously robust recognition system. The HMM-based approach is complex, but at the highest level involves the following:</para>
+    <para id="id1167899032073"/>
+    <list id="id1167894542799" list-type="enumerated" number-style="arabic">
+      <item>Each word has been broken down into phonemes, its smallest linguistic segments, and the HMM output distribution for each phoneme trained and stored beforehand</item>
+      <item>The HMM outputs sequences of n-dimensional real-valued vectors consisting of MFCCs every few milliseconds</item>
+      <item>Each state of the HMM contains a statistical distribution of a mixture of diagonal covariance Gaussians that indicate the likelihood of each vector</item>
+      <item>The HMM for the targeted word is then identified by concatenating the stored HMMs per target phoneme</item>
+    </list>
+  </content>
+</document>

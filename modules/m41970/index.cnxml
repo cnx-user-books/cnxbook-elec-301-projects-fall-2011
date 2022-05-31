@@ -1,0 +1,18 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Conclusion</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41970</md:content-id>
+  <md:title>Conclusion</md:title>
+  <md:abstract/>
+  <md:uuid>ee89ad17-0f64-4bc0-98be-cb8aa2f4bed6</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1171437616657">
+      <title>Conclusion</title>
+      <para id="id1171424412665">Using the NeuroSky Mindset device and the algorithm that we developed, we are can successfully distinguish when a person is relaxing and when the same person is focusing (while reading, for example). To differentiate the mental states of the subject, we relied on measurements from the power spectral density within the 10-50 Hz range. We integrated the power over these frequencies rather than calculating the L<sub>∞</sub><sub/>norm on the PSD because measurements with a very large variance in energy could be classified as the wrong mental state. The relaxing state in general showed a higher value than the reading state, and this trend was the basis of the algorithm to detect whether a subject was concentrating or not.</para>
+      <para id="id1171425105989">Although the results indicated an increase in energy at the harmonic frequencies 60 and 120 Hz while the subject was reading, we determined these are probably artifacts from the device and could not be used as a metric for concentration alone. Despite all the different subjects and trials, the spectrograms never showed any variation in frequency from these 60 and 120 Hz peaks.</para>
+      <para id="id1171429546950">The device had several shortcomings as an EEG that limited the experiments we wanted to perform. The NeuroSky MindSet uses a single, dry sensor. The position on the head is not standard for all the users and the relationship between placement of this sensor on different parts of the forehead and its effects on the measurements are not well understood. In the future, it would be helpful to compare the results to results collected using an EEG cap used in supervision of a medical professional.</para>
+    </section>
+  </content>
+</document>

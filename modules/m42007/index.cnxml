@@ -1,0 +1,16 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>6 - Voice Recognition: Conclusions and Future Improvements</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m42007</md:content-id>
+  <md:title>6 - Voice Recognition: Conclusions and Future Improvements</md:title>
+  <md:abstract/>
+  <md:uuid>f6f9b388-0300-4cff-9dc7-7b09d58aaccb</md:uuid>
+</metadata>
+
+<content>
+    <para id="id1171094811747">Conclusions and Future Improvements:</para>
+    <para id="id1171094909797">The project yielded reasonably accurate results using our independent algorithm. Unfortunately, it is a severely limited method of speech recognition. Feature-matching might be improved with an optimal determination of the number of Gaussians for the GMM of each sample, and recognition of female voices might be resolved easily enough with an appropriate frequency normalization filter, but the other aforementioned issues present much more serious problems, due to the sheer number of possible variations. </para>
+    <para id="id1171085132136">A more robust speech recognition system would certainly include a larger sample size, as well as recognize based upon phonemes instead of words, as many of the modern HMM-based systems do. </para>
+    <para id="id1171090278602">Given some more time, we would have tried to salvage our attempt at the LPC as well, this time using a support vector machine for improved feature-matching.</para>
+  </content>
+</document>

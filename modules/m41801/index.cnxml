@@ -1,0 +1,13 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Our Project</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41801</md:content-id>
+  <md:title>Our Project</md:title>
+  <md:abstract/>
+  <md:uuid>0811b493-c13c-407a-bbb7-7c587a890d6b</md:uuid>
+</metadata>
+
+<content>
+    <para id="id1168015341166">Our objective in this project was to improve our own understanding of CDMA and create a tool for others to use for the same purpose. The user would be able to see how the efficiency and error rate of a CDMA system changes based on its input parameters. By observing and analyzing the trends in the error rates the user would be able to better understand the effects of altering specific parameters on the system. Our simulation is designed to be a versatile model that can simulate many different scenarios and parameters. Our simulation aims to optimize efficiency of data transmission and minimize error rate. In order to create this toolbox we must be able understand all possible effects of changing parameters in our simulation and establish some limitations for the system and work within those constants. </para><para id="eip-606">Our finished code is available for download <link resource="cdma_sim_long_sequence.m">here</link>.</para>
+  </content>
+</document>

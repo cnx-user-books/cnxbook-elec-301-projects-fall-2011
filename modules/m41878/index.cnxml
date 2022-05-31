@@ -1,0 +1,20 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Reference</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41878</md:content-id>
+  <md:title>Reference</md:title>
+  <md:abstract>This module contains our references used in throughout our project</md:abstract>
+  <md:uuid>0ed99d01-cdf2-419a-b709-18b9aedf6000</md:uuid>
+</metadata>
+
+<content>
+    <para id="id4124198">References:</para>
+    <list id="id4755350" list-type="enumerated" number-style="arabic">
+      <item>Fergus, Rob, Barun Singh, Aaron Hertzmann, Sam T. Roweis, and William T. Freeman. "Removing Camera Shake from a Single Image." <emphasis effect="italics">Removing Camera Shake from an Image</emphasis>. Massachusetts Institute of Technology, 2006. Web. 18 Dec. 2011. <link url="http://cs.nyu.edu/~fergus/research/deblur.html">http://cs.nyu.edu/~fergus/research/deblur.html</link>.</item>
+      <item>"Image Processing Toolbox." <emphasis effect="italics">MathWorks Product Documentation R2011b Documentation</emphasis>. MathWorks, 2011. Web. 18 Dec. 2011. &lt;http://www.mathworks.com/help/toolbox/images/ref/fspecial.html&gt;.</item>
+      <item>Joshi, Neel, Sing Bing Kang, C. Lawrence Zitnick, and Richard Szeliski. "Spatially Varying PSFs Due to Camera Motion." <emphasis effect="italics">Microsoft Research - Turning Ideas into Reality</emphasis>. Microsoft, 2010. Web. 18 Dec. 2011. <link url="http://research.microsoft.com/en-us/um/redmond/groups/ivm/imudeblurring/spatially_varying_psfs/index.html">http://research.microsoft.com/en-us/um/redmond/groups/ivm/imudeblurring/spatially_varying_psfs/index.html</link>.</item>
+      <item>Veeraraghavan, Ashok, Ramesh Raskar, Amit Agrawal, Ankit Mohan, and Jack Tumblin. "Coded Aperture and Optical Heterodyning: A Mask-based Approach for Digital Refocusing and Light Field Acquisition by Conventional Cameras (SIGGRAPH 2007)." <emphasis effect="italics">MIT Media Lab</emphasis>. Massachusetts Institute of Technology, 2007. Web. 18 Dec. 2011. <link url="http://web.media.mit.edu/~raskar/Mask/">http://web.media.mit.edu/~raskar/Mask/</link>.</item>
+      <item>Yang, Junfeng, Yin Zhang, Wotao Yin, and Yilun Wang. "Rice University, L1-Related Optimization Project." <emphasis effect="italics">Department of Computational and Applied Mathematics</emphasis>. Rice University, May 2010. Web. 18 Dec. 2011. <link url="http://www.caam.rice.edu/~optimization/L1/ftvd/">http://www.caam.rice.edu/~optimization/L1/ftvd/</link>.</item>
+    </list>
+  </content>
+</document>

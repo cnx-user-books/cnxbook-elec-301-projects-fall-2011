@@ -1,0 +1,27 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>3 - Voice Recognition: Chosen Methods of Investigation</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41985</md:content-id>
+  <md:title>3 - Voice Recognition: Chosen Methods of Investigation</md:title>
+  <md:abstract/>
+  <md:uuid>057f2331-5d17-4db8-bf4e-9b213fbb24c5</md:uuid>
+</metadata>
+
+<content>
+    <para id="id1169663953170">Chosen Methods of Investigation</para>
+    <para id="id1169680691136">The limited timeframe of our project meant both DTW and HMM-based approaches were impractical, requiring many hundreds more man-hours than was available. We chose to focus on achieving solid results from a more primitive algorithm, the LPC, and work on making it more robust thereafter.</para>
+    <para id="id7582877">We collected the several hundreds of data samples used to train the library from ourselves.</para>
+    <para id="id1169663323967">We featured-matched input and stored data using the Yule-Walker autocorrelation method, minimizing the forward prediction error in the least squares sense. This was done using Matlab’s Yule-Walker AR Estimator.</para>
+    <para id="id1169664551920">Testing the algorithm resulted in an abysmal 20-30% accuracy. </para>
+    <para id="id1169663787031">We thought to produce better base accuracy with an algorithm of our own making. Our final results are based upon the following algorithm outlined:</para>
+    <list id="id1169658084570" list-type="enumerated" number-style="arabic">
+      <item>Convolution-based segmentation</item>
+      <item>Feature extraction of formants via nonlinear power filter</item>
+      <item>Display filtered spectrum on a discrete, weighted scatter plot</item>
+      <item>Trace out contours of the maximum-likelihood Gaussian Mixture Model (GMM) using a maximum-likelihood GMM estimator</item>
+      <item>Construct a standardized GMM parameter library for each number</item>
+      <item>Find the GMM matching the input with a maximum-likelihood fit</item>
+    </list>
+<para id="id1163725368646"><media id="figure1" alt="an envelope with a blue page"><image mime-type="image/png" src="../../media/Method.png"/></media></para>
+  </content>
+</document>

@@ -1,0 +1,52 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Goals and Objectives</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41974</md:content-id>
+  <md:title>Goals and Objectives</md:title>
+  <md:abstract>This module describes our objectives for the whole project.</md:abstract>
+  <md:uuid>36a29917-2e5a-4eb4-bef5-9c77d532a38b</md:uuid>
+</metadata>
+
+<content>
+    <para id="id1167669334487">Motivation</para>
+    <para id="id1167666552858">The following equation provides the basic model for a blurry observation:</para>
+    <figure id="id1167666618540">
+      <media id="id1167666618540_media" alt="">
+        <image mime-type="image/png" src="../../media/Picture 1.png" id="id1167666618540__onlineimage" height="19" width="78"/>
+      </media>
+    </figure>
+    <para id="id1167687691954">The FTVd algorithm quickly reconstructs a clear image from a noisy, blurry image for a given blur kernel. Our objective is to study the efficacy of the Fast Total Variation deconvolution (FTVd) algorithm for recovering images affected by common types of blur.</para>
+    <para id="id1167669289964">Problem</para>
+    <para id="id1167665832718">While blur can be used as an artistic effect, much of photography distills down to practices that minimize blur. For instance, there are techniques for holding the camera steady to minimize shake or movement of the focal plane. High shutter speeds are used to “freeze” object motion. Furthermore, manufacturers design high-end lenses with “image stabilization” or “vibration reduction” features, and some design the sensor in the camera body to resist forms of camera shake. But as cameras become increasingly integrated with small form factor devices, their size and lack of heft make them more susceptible to blur caused by camera shake or movement between the shooter and the subject. As a result, the techniques and equipment that are used in digital SLR photography present a less practical solution to a growing photography community. </para>
+    <para id="id1167678911063">Even with the right equipment, however, blur is an unavoidable reality in images. Also, that same integrated circuits and small devices in that same equipment will introduce different kinds of noise that further corrupt the received signal. For a photographer trying to capture the moment in which an event occurs, a blurry image can be an opportunity lost forever. For the photographer shooting a dim scene without a steady hand, blurry pictures are the norm. Post-processing of these photos may present an avenue for salvaging blurry photos that are otherwise useless.</para>
+    <para id="id1167665853017">Objective</para>
+    <list id="id1167666391435" list-type="bulleted">
+      <item>Study the effects of 2 types of blur: Focus and Motion blur</item>
+    </list>
+    <list id="id1167665927196" list-type="bulleted">
+      <item>Motion:  handshake motion at point of observation and motion of the observed object</item>
+    </list>
+    <list id="id1167673601417" list-type="bulleted">
+      <item>Focus:  2D Disc completly out of focus and Distance based Foreground/Background distinction</item>
+    </list>
+    <list id="id1167669054640" list-type="bulleted">
+      <item>Study the efficacy of the FTVd algorithm</item>
+      <item>Plot the SNR and the PSNR of the images </item>
+    </list>
+    <para id="id1167672029636">We will use the following two images to test the FTVd algorithms. </para>
+    <para id="id1167667948493">
+      <figure id="id5597085">
+        <media id="id5597085_media" alt="">
+          <image mime-type="image/jpg" src="../../media/Picture 0-251a.jpg" id="id5597085__onlineimage" height="558" width="558"/>
+        </media>
+      </figure>
+    </para>
+    <para id="id1167667598849">
+      <figure id="id1167672091583">
+        <media id="id1167672091583_media" alt="">
+          <image mime-type="image/jpg" src="../../media/Picture 2-49da.jpg" id="id1167672091583__onlineimage" height="547" width="547"/>
+        </media>
+      </figure>
+    </para>
+  </content>
+</document>

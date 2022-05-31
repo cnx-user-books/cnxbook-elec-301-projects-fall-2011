@@ -1,0 +1,16 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Generating the Spreading Sequence</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41827</md:content-id>
+  <md:title>Generating the Spreading Sequence</md:title>
+  <md:abstract/>
+  <md:uuid>fec446bd-2343-4dbc-838b-7c8fe47a2d5d</md:uuid>
+</metadata>
+
+<content>
+    <para id="id1170765501982">To generate a PN sequence in MATLAB, we used the built-in PN sequence generator, which uses a linear feedback shift register (LFSR) to determine the sequence. An LFSR is a set of shift registers connected with a feedback configuration.  The register values update simultaneously during each cycle.  An important input parameter of an LFSR is the generator polynomial.  The degree of the generator polynomial determines the number of registers in the LFSR.  For example, an LFSR with a generator polynomial of degree 3 will have three registers.  The coefficients of the generator polynomial, which are either 0 or 1, determine the feedback connections.  A coefficient of 1 for a particular term means the feedback is connected to the corresponding register, while a coefficient of 0 means there is no feedback connected.  The coefficients of the first and last term of the generator polynomial must be 1.</para>
+    <para id="id1170764624872">Another important parameter for an LFSR is the initial state of the registers.  The initial state cannot be 0 for all registers because if they were, no amount of feedback could make the registers change to any other value.  By default, the initial state of the register representing the least significant bit is 1 and all other registers are 0.</para>
+    <para id="id1170776166601">When our generator polynomial has degree r and we have r registers, the registers can display at most 2^r-1 different states, because the state of all zeros can never come up if we want the states of our register to change.  Since the output PN sequence will be read off one particular register, typically the right-most register, the period of the PN sequence will also be 2^r-1.  Not all generator polynomials will yield the maximum length PN sequence.  We assign a specific generator polynomial for each degree to achieve the maximum length PN sequence.  We select these from a table of values provided for use with MATLAB which specifies which generator polynomial to use to achieve the maximum length.  </para>
+    <para id="id1170778318363">The maximum length shift register is good for generating sequences with long periods.  To create a spreading waveform for each of the users in a system, we assign each user a delayed version of the same sequence.  A property of PN sequences is they are roughly orthogonal to delayed versions of themselves, so each user will have a spreading waveform which is approximately orthogonal to other users.</para>
+  </content>
+</document>

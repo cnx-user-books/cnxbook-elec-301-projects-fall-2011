@@ -1,0 +1,16 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>Introduction</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41951</md:content-id>
+  <md:title>Introduction</md:title>
+  <md:abstract/>
+  <md:uuid>f3c3b497-12b9-4683-98e8-b51816a01dd1</md:uuid>
+</metadata>
+
+<content>
+  <para id="delete_me"><title>Project Introduction and Background</title>When measured using proper equipment in a lab, EEG signals can accurately represent brain activity. Clinically, EEG data are useful for diagnosing brain disorders such as epilepsy, and as a tool for studying sleep. In other realms of brain research, EEGs are used as an alternative to technologies like fMRIs and PET scans as a way to visualize the brain’s internal processes. The NeuroSky MindSet is a commodity EEG that is available cheaply and claims to measure brain signals by means of three electrodes located on the ear and temple. Its output is purported to be useful in determining the state of the brain, especially with respect to levels of concentration and relaxation. This technology should enable advances in research areas such as education, in which an understanding of students' focus levels could prove highly valuable when teaching or designing curricula. We attempt to explore some of these possibilities by analyzing EEG data collected in the course of a variety of activities and attempting to algorithmically distinguish between them in MATLAB.
+</para><para id="eip-982"><title>A Brief Overview of the Device</title>The MindSet package consists of the headset itself, a charging cable, a Bluetooth dongle, and a collection of software (mostly games) intended to demonstrate the functionality of the device. The device communicates all of its data to the computer over a Bluetooth connection. This package is sold by NeuroSky for $200. The encoding of this Bluetooth serial data is such that it is not human readable, and is difficult to parse in software. Because of this, it is necessary to purchase an additional research package in order to collect and analyze the headset’s raw data. NeuroSky calls this package the “MindSet Research Tools (MRT),” and sells it for $500. The MRT includes two applications for collecting and analyzing data from the MindSet: a simpler one called NeuroView, and a more complex one called NeuroSkyLab. NeuroView provides a simple interface for recording data from the headset and saving it in a format that can be easily loaded into MATLAB. NeuroSkyLab allows more analysis to be done inside the application environment, however we chose do do all of our analysis in MATLAB. Because we had no need for this functionality outside of MATLAB, we chose to use the cleaner NeuroView interface to collect data. Once loaded into the MATLAB environment, all of the data can of course be analyzed using standard techniques in signal processing.</para>
+</content>
+
+</document>
