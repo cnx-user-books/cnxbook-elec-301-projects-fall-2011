@@ -1,666 +1,179 @@
-<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xmlns:cnxml="http://cnx.rice.edu/cnxml" xml:lang="en">
+<?xml version="1.0"?>
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xmlns:cnxml="http://cnx.rice.edu/cnxml" xml:lang="en" authors="Rice University ELEC 301">
   <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
-  <md:content-id>col11431</md:content-id>
-  <md:title>ELEC 301 Projects Fall 2011</md:title>
-  
-  
-  <md:license url="http://creativecommons.org/licenses/by/3.0/"/>
-  <md:language>en</md:language>
-
-  
-
-  
-  
-  <md:uuid>d0c2ef97-f104-4908-9ce4-53a6663b1654</md:uuid>
-<md:slug>elec-301-projects-fall-2011</md:slug>
-</metadata>
-
+    <md:content-id>col11431</md:content-id>
+    <md:title>ELEC 301 Projects Fall 2011</md:title>
+    <md:license url="http://creativecommons.org/licenses/by/3.0/"/>
+    <md:language>en</md:language>
+    <md:uuid>d0c2ef97-f104-4908-9ce4-53a6663b1654</md:uuid>
+    <md:slug>elec-301-projects-fall-2011</md:slug>
+  </metadata>
   <col:content>
-    
-      
-        
-      <col:subcollection>
-        <md:title>Blur and Recovery with FTVd</md:title>
-        
-        
-        
-
-        <col:content>
-          
-    
-      <col:module document="m41974"/>
-        
-      
-    
-    
-      <col:module document="m41976"/>
-        
-      
-    
-    
-      <col:module document="m41980"/>
-        
-      
-    
-    
-      <col:module document="m41878"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>The Boomerang Project: A Recreation</md:title>
-        
-        
-        
-
-        <col:content>
-          
-    
-      <col:module document="m41942"/>
-        
-      
-    
-    
-      <col:module document="m41956"/>
-        
-      
-    
-    
-      <col:module document="m41952"/>
-        
-      
-    
-    
-      <col:module document="m41943"/>
-        
-      
-    
-    
-      <col:module document="m41945"/>
-        
-      
-    
-    
-      <col:module document="m41949"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>CDMA Simulation</md:title>
-        
-        
-        
-
-        <col:content>
-          
-    
-      <col:module document="m41808"/>
-        
-      
-    
-    
-      <col:module document="m41801"/>
-        
-      
-    
-    
-      <col:module document="m41832"/>
-        
-      
-    
-    
-      <col:module document="m41829"/>
-        
-      
-    
-    
-      <col:module document="m41827"/>
-        
-      
-    
-    
-      <col:module document="m41804"/>
-        
-      
-    
-    
-      <col:module document="m41831"/>
-        
-      
-    
-    
-      <col:module document="m41815"/>
-        
-      
-    
-    
-      <col:module document="m41796"/>
-        
-      
-    
-    
-      <col:module document="m41805"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Characterization of EEG Signals from NeuroSky MindSet Device</md:title>
-        
-        
-        
-
-        <col:content>
-          
-    
-      <col:module document="m41951"/>
-        
-      
-    
-    
-      <col:module document="m41954"/>
-        
-      
-    
-    
-      <col:module document="m41966"/>
-        
-      
-    
-    
-      <col:module document="m41972"/>
-        
-      
-    
-    
-      <col:module document="m41965"/>
-        
-      
-    
-    
-      <col:module document="m41970"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Digital Filters in 16-QAM Communication</md:title>
-        
-        
-        
-
-        <col:content>
-          
-    
-      <col:module document="m41717"/>
-        
-      
-    
-    
-      <col:module document="m41714"/>
-        
-      
-    
-    
-      <col:module document="m41715"/>
-        
-      
-    
-    
-      <col:module document="m41710"/>
-        
-      
-    
-    
-      <col:module document="m41709"/>
-        
-      
-    
-    
-      <col:module document="m41708"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Facial Expression Recognition by Support Vector Machines</md:title>
-        
-        
-        
-
-        <col:content>
-          
-    
-      <col:module document="m41841"/>
-        
-      
-    
-    
-      <col:module document="m41855"/>
-        
-      
-    
-    
-      <col:module document="m41861"/>
-        
-      
-    
-    
-      <col:module document="m41862"/>
-        
-      
-    
-    
-      <col:module document="m41865"/>
-        
-      
-    
-    
-      <col:module document="m41914"/>
-        
-      
-    
-    
-      <col:module document="m41875"/>
-        
-      
-    
-    
-      <col:module document="m41873"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Near Field Communication Simulation &amp; Identification</md:title>
-        
-        
-        
-
-        <col:content>
-          
-    
-      <col:module document="m42010"/>
-        
-      
-    
-    
-      <col:module document="m42015"/>
-        
-      
-    
-    
-      <col:module document="m42017"/>
-        
-      
-    
-    
-      <col:module document="m42016"/>
-        
-      
-    
-    
-      <col:module document="m42014"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Music Transcription Through Frequency Reassignment</md:title>
-        
-        
-        
-
-        <col:content>
-          
-    
-      <col:module document="m41893"/>
-        
-      
-    
-    
-      <col:module document="m41892"/>
-        
-      
-    
-    
-      <col:module document="m41894"/>
-        
-      
-    
-    
-      <col:module document="m41960"/>
-        
-      
-    
-    
-      <col:module document="m41934"/>
-        
-      
-    
-    
-      <col:module document="m41964"/>
-        
-      
-    
-    
-      <col:module document="m41890"/>
-        
-      
-    
-    
-      <col:module document="m41883"/>
-        
-      
-    
-    
-      <col:module document="m41891"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Red Cup Replacement</md:title>
-        
-        
-        
-
-        <col:content>
-          
-    
-      <col:module document="m41929"/>
-        
-      
-    
-    
-      <col:module document="m41918"/>
-        
-      
-    
-    
-      <col:module document="m41915"/>
-        
-      
-    
-    
-      <col:module document="m41921"/>
-        
-      
-    
-    
-      <col:module document="m41845"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Street Sign Detection With Template Matching and Edge Detection Methods</md:title>
-        
-        
-        
-
-        <col:content>
-          
-    
-      <col:module document="m41774"/>
-        
-      
-    
-    
-      <col:module document="m41781">
-        <col:featured-links>
-          
+    <col:subcollection>
+      <md:title>Blur and Recovery with FTVd</md:title>
+      <col:content>
+        <col:module document="m41974"/>
+        <col:module document="m41976"/>
+        <col:module document="m41980"/>
+        <col:module document="m41878"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>The Boomerang Project: A Recreation</md:title>
+      <col:content>
+        <col:module document="m41942"/>
+        <col:module document="m41956"/>
+        <col:module document="m41952"/>
+        <col:module document="m41943"/>
+        <col:module document="m41945"/>
+        <col:module document="m41949"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>CDMA Simulation</md:title>
+      <col:content>
+        <col:module document="m41808"/>
+        <col:module document="m41801"/>
+        <col:module document="m41832"/>
+        <col:module document="m41829"/>
+        <col:module document="m41827"/>
+        <col:module document="m41804"/>
+        <col:module document="m41831"/>
+        <col:module document="m41815"/>
+        <col:module document="m41796"/>
+        <col:module document="m41805"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Characterization of EEG Signals from NeuroSky MindSet Device</md:title>
+      <col:content>
+        <col:module document="m41951"/>
+        <col:module document="m41954"/>
+        <col:module document="m41966"/>
+        <col:module document="m41972"/>
+        <col:module document="m41965"/>
+        <col:module document="m41970"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Digital Filters in 16-QAM Communication</md:title>
+      <col:content>
+        <col:module document="m41717"/>
+        <col:module document="m41714"/>
+        <col:module document="m41715"/>
+        <col:module document="m41710"/>
+        <col:module document="m41709"/>
+        <col:module document="m41708"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Facial Expression Recognition by Support Vector Machines</md:title>
+      <col:content>
+        <col:module document="m41841"/>
+        <col:module document="m41855"/>
+        <col:module document="m41861"/>
+        <col:module document="m41862"/>
+        <col:module document="m41865"/>
+        <col:module document="m41914"/>
+        <col:module document="m41875"/>
+        <col:module document="m41873"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Near Field Communication Simulation &amp; Identification</md:title>
+      <col:content>
+        <col:module document="m42010"/>
+        <col:module document="m42015"/>
+        <col:module document="m42017"/>
+        <col:module document="m42016"/>
+        <col:module document="m42014"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Music Transcription Through Frequency Reassignment</md:title>
+      <col:content>
+        <col:module document="m41893"/>
+        <col:module document="m41892"/>
+        <col:module document="m41894"/>
+        <col:module document="m41960"/>
+        <col:module document="m41934"/>
+        <col:module document="m41964"/>
+        <col:module document="m41890"/>
+        <col:module document="m41883"/>
+        <col:module document="m41891"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Red Cup Replacement</md:title>
+      <col:content>
+        <col:module document="m41929"/>
+        <col:module document="m41918"/>
+        <col:module document="m41915"/>
+        <col:module document="m41921"/>
+        <col:module document="m41845"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Street Sign Detection With Template Matching and Edge Detection Methods</md:title>
+      <col:content>
+        <col:module document="m41774"/>
+        <col:module document="m41781">
+          <col:featured-links>
             <cnxml:link-group type="supplemental">
               <cnxml:link url="http://en.wikipedia.org/wiki/Sobel_operator">Sobel Operator</cnxml:link>
               <cnxml:link url="http://www.mathworks.com/help/toolbox/images/ref/normxcorr2.html">Normxcorr2</cnxml:link>
               <cnxml:link url="http://www.cs.umd.edu/~djacobs/CMSC426/Convolution.pdf">Correlation and Convolution</cnxml:link>
             </cnxml:link-group>
-          
-        </col:featured-links>
-      </col:module>
-        
-      
-    
-    
-      <col:module document="m41788"/>
-        
-      
-    
-    
-      <col:module document="m41793"/>
-        
-      
-    
-    
-      <col:module document="m41791"/>
-        
-      
-    
-    
-      <col:module document="m41785"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Tune Identification</md:title>
-        
-        
-        
-
-        <col:content>
-          
-    
-      <col:module document="m41910"/>
-        
-      
-    
-    
-      <col:module document="m41912"/>
-        
-      
-    
-    
-      <col:module document="m41909"/>
-        
-      
-    
-    
-      <col:module document="m41911"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Voice Recognition - I</md:title>
-        
-        
-        
-
-        <col:content>
-          
-    
-      <col:module document="m41983"/>
-        
-      
-    
-    
-      <col:module document="m41984"/>
-        
-      
-    
-    
-      <col:module document="m41985"/>
-        
-      
-    
-    
-      <col:module document="m41986"/>
-        
-      
-    
-    
-      <col:module document="m41987"/>
-        
-      
-    
-    
-      <col:module document="m42007"/>
-        
-      
-    
-    
-      <col:module document="m42002"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Voice Recognition - II</md:title>
-        
-        
-        
-
-        <col:content>
-          
-    
-      <col:module document="m41854"/>
-        
-      
-    
-    
-      <col:module document="m41768"/>
-        
-      
-    
-    
-      <col:module document="m41762"/>
-        
-      
-    
-    
-      <col:module document="m41764"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
-    
-      
-        
-      <col:subcollection>
-        <md:title>Wavelet Analysis of Crude Oil Futures</md:title>
-        
-        
-        
-
-        <col:content>
-          
-    
-      <col:module document="m41906"/>
-        
-      
-    
-    
-      <col:module document="m41899"/>
-        
-      
-    
-    
-      <col:module document="m41902"/>
-        
-      
-    
-    
-      <col:module document="m41905"/>
-        
-      
-    
-    
-      <col:module document="m41838"/>
-        
-      
-    
-    
-      <col:module document="m41839"/>
-        
-      
-    
-    
-      <col:module document="m41850"/>
-        
-      
-    
-    
-      <col:module document="m41887"/>
-        
-      
-    
-        </col:content>
-      </col:subcollection>
-    
+          </col:featured-links>
+        </col:module>
+        <col:module document="m41788"/>
+        <col:module document="m41793"/>
+        <col:module document="m41791"/>
+        <col:module document="m41785"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Tune Identification</md:title>
+      <col:content>
+        <col:module document="m41910"/>
+        <col:module document="m41912"/>
+        <col:module document="m41909"/>
+        <col:module document="m41911"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Voice Recognition - I</md:title>
+      <col:content>
+        <col:module document="m41983"/>
+        <col:module document="m41984"/>
+        <col:module document="m41985"/>
+        <col:module document="m41986"/>
+        <col:module document="m41987"/>
+        <col:module document="m42007"/>
+        <col:module document="m42002"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Voice Recognition - II</md:title>
+      <col:content>
+        <col:module document="m41854"/>
+        <col:module document="m41768"/>
+        <col:module document="m41762"/>
+        <col:module document="m41764"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Wavelet Analysis of Crude Oil Futures</md:title>
+      <col:content>
+        <col:module document="m41906"/>
+        <col:module document="m41899"/>
+        <col:module document="m41902"/>
+        <col:module document="m41905"/>
+        <col:module document="m41838"/>
+        <col:module document="m41839"/>
+        <col:module document="m41850"/>
+        <col:module document="m41887"/>
+      </col:content>
+    </col:subcollection>
   </col:content>
 </col:collection>
